@@ -1,3 +1,5 @@
+#binary search tree implementation unittests
+
 from binary_search_tree import *
 import unittest
 
