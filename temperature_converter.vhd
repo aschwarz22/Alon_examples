@@ -72,7 +72,7 @@ outf(3) <= af(3);
 cel <= '1';
 far <= '0';
 kel <= '0';
---outputs kelvin temperature if sel is 0
+--outputs kelvin temperature if sel is 1
 elsif (s2 = '0') then 
 outf(0) <= c2k0;
 outf(1) <= c2k1;
@@ -81,7 +81,7 @@ outf(3) <= c2k3;
 cel <= '0';
 far <= '0';
 kel <= '1';
---outputs fahrenheit temperature if sel is 1
+--outputs fahrenheit temperature if sel is 0
 elsif (s2 = '1')then 
 outf(0) <= c2f3; 
 outf(1) <= c2f2;
