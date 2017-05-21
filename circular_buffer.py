@@ -3,7 +3,7 @@ from array_list import *
 cap = 5000
 
 #a Circular buffer is a
-#linked list object containing a
+#list object containing a
 #headIdx, an int, 
 #a tailIdx, an int, and
 #a length, an int
