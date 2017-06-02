@@ -105,6 +105,23 @@ def remove(Pair1, index):
             previous.rest = current.rest
         return (removedValue, Pair1)
 
+def comes_before(a, b):
+    return a <= b
 
+#Pair1 is a linked list
+#val is an int
+#func is a function
+#linked list val func --> linked list
+#returns linked list with val added in location according to func
+def insert_sorted(Pair1, t1, func):
+    if Pair1 == Pair(None, None) or Pair1 is None:
+        return Pair(t1, None)
+    else:
+        idx = 0
+        for i in Pair1:
+            if not func(t1, i):
+                idx += 1
+        Pair1 = add(Pair1, idx, t1)
+    return Pair1
 
 
