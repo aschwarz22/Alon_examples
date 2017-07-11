@@ -47,6 +47,7 @@ def check_cap(fname):
            idx = count-1
            arr1.list[idx] = line
        arr1.elements = count
+       f.close()
        return arr1
    except IOError:
        raise IOError('file name not found')
